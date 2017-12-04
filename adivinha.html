@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+
+		function mostra(frase) {
+			document.write(frase + "<br>");
+		}
+
+		// var numeroPensado = Math.round(Math.random() * 10);
+		// var numTentativa = 1;
+		// while (numeroPensado != chute) {
+		// 	var chute = prompt("Chute um número:")
+		// 	if (chute == numeroPensado) {
+		// 		mostra("Você acertou!");	
+		// 	} else {
+		// 		if (chute > numeroPensado) {
+		// 			mostra("Seu chute é maior que o numero sorteado");
+		// 		} else {
+		// 			mostra("Seu chute é menor que o numero sorteado")
+		// 		}
+		// 	numTentativa++
+		// 	}
+		// }
+
+		// function sorteia(n) {
+		// 	return Math.round(Math.random() * n);
+
+		// }
+		// var n = "banana";
+		// var sorte = sorteia(n);
+		// console.log(sorte);
+		// if(isNaN(n)) {
+		// 	console.log("apenas números inteiros");
+		// }
+
+		// var anoDeCopa = parseInt(prompt("Qual o ano inicial?"));
+		// var anoLimite = prompt("Qual o ano final?");
+		// while(anoDeCopa <= anoLimite) {
+		// 	mostra(anoDeCopa + " tem Copa! ");
+		// 	anoDeCopa = anoDeCopa + 4;
+		// }
+
+		// 	var numerais = 6;
+
+		// for (let multiplicador = 1; multiplicador <= 10; multiplicador++) {
+		// 	mostra(numerais +  " x " + multiplicador + " = " + numerais * multiplicador);
+		// }
+
+		// exercicio media idade familiares
+
+		// var totalFamil = prompt("Qual o total de familiares?");
+		// var somaIdades = 0;
+		// for (var numInicial = 1; numInicial <= totalFamil; numInicial++) {
+		// 	var idade = parseInt(prompt("Qual as idades?"));
+		// 	somaIdades = somaIdades + idade;
+		// }
+		// var media = somaIdades / totalFamil
+		// ;
+		// alert(media);
+
+		// asteriscos
+
+		// for(var linha = 0; linha < 3; linha = linha +1){
+		// 	for(var coluna = 0; coluna < 10; coluna = coluna +1){
+		// 		document.write("*");
+		// 	}
+		// 	document.write("<br>");
+		// }
+		
+		//para cada linha faça
+		//for(var linha = 0; linha < 9; linha = linha +1){
+		//para cada coluna imprima um *	
+		//	for(var coluna = 0; coluna < 9; coluna = coluna +1){
+		//		document.write("*");
+		//	}
+		// no final de cada linha imprimimos um br
+		//	document.write("<br>");
+		//}
+		// cada vez que o nosso loop de colunas termina ele pula linha
+		// e começa a execução do loop que cuida das linhas
+
+		// for(var linha = 0; linha < 9; linha++){
+		// 	for(var coluna = 0; coluna < 9; coluna = coluna +1){
+		// 		document.write("*");
+		// 	}
+		// 	document.write("<br>");
+		// }
+		// if(linha == ) 
+
+	</script>
+	<!-- <input type="text" id="numero" />
+	<input type="submit" id="adivinhar" value="Compare com o meu segredo" />
+	<script>
+	var segredo = 8;
+	var caixaDoNumero = document.getElementById("numero");
+	function botaoClicado() {
+		if(segredo == caixaDoNumero.value){
+			alert("Acertou!");
+			caixaDoNumero.value = "";
+		}else{
+			alert("Errou!");
+			caixaDoNumero.value = "";
+		}
+	}
+	var botaoAdivinhar = document.getElementById("adivinhar");
+	botaoAdivinhar.onclick = botaoClicado; -->
+	<!-- </script> -->
+	<script>
+	
+	// var segredos = [2, 4, 6, 8, 10];
+	// for(var i = 0; i < segredos.length; i++){
+	// 	console.log(segredos[i]);
+	// }
+
+		// var numeros = 30;
+		// while(numeros <=40){
+		// 	if(numeros != 33 && numeros != 37){
+		// 		mostra(numeros);
+		// 	}
+		// 	numeros = numeros + 1;
+		// }
+
+		// var descrescente = 20;
+		// while(descrescente >= 0){
+		// 		mostra(descrescente);
+		// 	descrescente = descrescente - 1;
+		// }
+
+	var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+		var tentativas = 1;
+		while(tentativas <= 3){
+			var loginInformado = prompt("Informe seu login");
+    		var senhaInformada = prompt("Informe sua senha");
+			if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+        alert("Bem-vindo ao sistema " + loginInformado);
+		break;
+    } else {
+        alert("Login inválido. Tente novamente");
+    }
+	tentativas = tentativas + 1;
+		}
+
+
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicios senai</title>
+</head>
+
+<body>
+    <script>
+        // // exercicio 01
+        // var idAnos = 10;
+        // var idMeses = (idAnos * 12);
+        // var idDias = (idAnos * 365);
+        // var idHoras = (idDias * 24);
+        // var idMin = (idHoras * 60);
+        // console.log("Minha idade é: " + idMeses + " meses ou " + idDias + " dias ou " + idHoras + " horas ou " + idMin + " minutos. ");
+
+        // // exercicio 02
+        // var anoNasc = 1987;
+        // var anoAtual = 2017;
+        // var idade = anoAtual - anoNasc;
+        // console.log(idade + " anos ou " + (idade * 52 + " semanas "));
+
+        // // exercicio 03
+        // var num = 6;
+        // var dobro = num * 2;
+        // console.log(dobro);
+
+        // // exercicio 04
+        // var nome = "Poliana";
+        // var peso = 64;
+        // var altura = 1.72;
+        // console.log(nome + (peso/(altura * altura)));
+
+        // // exercicio 05
+        // var medCent = 100;
+        // var medPol = medCent / 2.5;
+        // console.log(medPol);
+
+        // // exercicio 06
+        // var polegadas = 100;
+        // var centimetro = polegadas * 2.5;
+        // console.log(centimetro);
+
+        // // exercicio 07
+        // var nome = "Poliana";
+        // var cargo = "desenvolvedora";
+        // var salario = 1800;
+        // var novoSalario = salario + (1800 * 0.1);
+        // console.log(novoSalario);
+
+        // // exercicio 08
+
+        // var n1 = 8;
+        // var n2 = 8;
+        // var n3 = 0;
+        // var n4 = 10;
+        // var media = (n1 + n2 + n3 + n4)/4;
+
+        // if(media >7) {
+        //     console.log("aprovado");
+        // }else{
+        //     console.log("reprovado");
+        // }
+
+        // // exercicio 09/10
+
+        // var sal = 600;
+        // if(sal < 500) {
+        //     console.log(sal + (sal * 0.3))
+        // }else{
+        //     console.log("sem direito a aumento")
+        // }
+
+        // // exercicio 11
+
+        // var numInteiro = -3;
+        // if(numInteiro > 0) {
+        //     console.log("positivo");
+        // }
+        // if(numInteiro < 0) {
+        //     console.log("negativo");
+        // }
+
+        // // exercicio 12/13
+
+        // var numero = 6;
+        // var numTest = numero % 2;
+        // if(numTest == 0) {
+        //     console.log("Par");
+        // }else{
+        //     console.log("impar");
+        // }
+        // if(numTest == 0) {
+        //     console.log("Par");
+        // }else{
+        //     console.log(" ");
+        // }
+
+        // exercicio 14
+
+        // var preço = 35;
+        // var origem = 8;
+
+        // if(origem == 1) {
+        //     console.log("Sul");
+        // }
+        // if(origem == 2) {
+        //     console.log("Norte");
+        // }
+        // if(origem == 3) {
+        //     console.log("Leste");
+        // }
+        // if(origem == 4) {
+        //     console.log("Oeste");
+        // }
+        // if(origem == 5 || origem == 6) {
+        //     console.log("Nordeste");
+        // }
+        // if(origem >= 7 && origem <= 9) {
+        //     console.log("Sudeste");
+        // }
+        // if(origem >= 10 && origem <= 20) {
+        //     console.log("Centro-Oeste");
+        // }
+        // if(origem >= 21 && origem <= 30) {
+        //     console.log("Sem definição");
+        // }
+
+        // // exercicio 15
+
+        // var num1 = 7;
+        // var num2 = 5;
+        // var num3 = 9;
+        // var num4 = 6;
+        // var media = (num1 + num2 + num3 + num4)/4;
+        // console.log(media);
+
+        // if(media >= 7) {
+        //     console.log("aprovado");
+        // }else{
+        //     if(media >= 5 && media < 7){
+        //         console.log("recuperação");
+        //     }else{
+        //         console.log("reprovado");
+        //     }
+        // }
+
+        // // exercicio 16
+
+        // var funcionario = {
+        //     cargo: "desenvolvedor",
+        //     salario: 2000
+        // }
+        // if(funcionario.cargo == "producao") {
+        //     console.log(funcionario.salario + (funcionario.salario * 0.065));
+        // }else{
+        //     if(funcionario.cargo == "administracao"){
+        //         console.log(funcionario.salario + (funcionario.salario * 0.075));
+        //         }else{
+        //             if(funcionario.cargo == "diretoria"){
+        //         console.log( funcionario.salario + (funcionario.salario * 0.12));
+        //         }else{
+        //             console.log("não temos aumento para você");
+        //         }
+        //     }
+        // }
+
+        // // exercicio 17
+
+        // var numeroPar = 3;
+        // var result = numeroPar % 2;
+        // if(result == 0) {
+        //     console.log(numeroPar)
+        // }else{
+        //     console.log("digite um número par");
+        // }
+
+        // // exercicio 18
+
+        // var price = 35;
+        // var origin = 9;
+        //         if (origin == 1) {
+        //             console.log("Sul")
+        //         } else {
+        //             if (origin == 2) {
+        //                 console.log("Norte");
+        //             } else {
+        //                 if (origin == 3) {
+        //                     console.log("Leste");
+        //                 } else {
+        //                     if (origin == 4) {
+        //                         console.log("Oeste");
+        //                     } else {
+        //                         if (origin == 5 || origin == 6) {
+        //                             console.log("Nordeste");
+        //                         } else {
+        //                             if (origin >= 7 && origin <= 9) {
+        //                                 console.log("Sudeste");
+        //                             } else {
+        //                                 if (origin >= 10 && origin <= 20) {
+        //                                     console.log("Centro-Oeste");
+        //                                 } else {
+        //                                     if (origin >= 21 && origin <= 30) {
+        //                                         console.log("Sem definição");
+        //                                     }
+        //                                 }
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        // // exercicio 19
+
+        // var idad = 57;
+        // if( idad >= 0 && idad <= 2){
+        //     console.log("Recém Nascido")
+        // }else{
+        //     if(idad >= 3 && idad <= 11){
+        //         console.log("criança")
+        //     }else{
+        //         if(idad >= 12 && idad <= 19){
+        //             console.log("Adolescente");
+        //         }else{
+        //             if(idad >= 20 && idad <= 55){
+        //                 console.log("adulto");
+        //             }else{
+        //                 if(idad > 55){
+        //                     console.log("idoso");
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+        // exercicio 20
+
+        // var func = {
+        //     nome: "Poliana",
+        //     salario: 100,
+        //     codigo: 5
+        // }
+        // var escriturario = {
+        //     codigoCargo: 1,
+        //     cargo: "escriturario",
+        //     reajuste: 50,
+        //     reajustado: func.salario + (func.salario * 0.5)
+        // }
+        // var secretario = {
+        //     codigoCargo: 2,
+        //     cargo: "secretario",
+        //     reajuste: 35,
+        //     reajustado: func.salario + (func.salario * 0.35)
+        // }
+        // var caixa = {
+        //     codigoCargo: 3,
+        //     cargo: "caixa",
+        //     reajuste: 20,
+        //     reajustado: func.salario + (func.salario * 0.20)
+        // }
+        // var gerente = {
+        //     codigoCargo: 4,
+        //     cargo: "gerente",
+        //     reajuste: 10,
+        //     reajustado: func.salario + (func.salario * 0.10)
+        // }
+        // var diretor = {
+        //     codigoCargo: 5,
+        //     cargo: "diretor",
+        //     reajustado: "não tem aumento"
+        // }
+        // if (func.codigo == 1) {
+        //     console.log(func.nome + " salario: " + func.salario + " código: " + func.codigo + " cargo: " + escriturario.cargo + ". Aumento de: " + escriturario.reajuste + "%. Salário reajustado: R$" + escriturario.reajustado);
+        // } else {
+        //     if (func.codigo == 2) {
+        //         console.log(func.nome + " salario: " + func.salario + " código: " + func.codigo + " cargo: " + secretario.cargo + ". Aumento de: " + secretario.reajuste + "%. Salário reajustado: R$" + secretario.reajustado);
+        //     } else {
+        //         if (func.codigo == 3) {
+        //             console.log(func.nome + " salario: " + func.salario + " código: " + func.codigo + " cargo: " + caixa.cargo + ". Aumento de: " + caixa.reajuste + "%. Salário reajustado: R$" + caixa.reajustado);
+        //         } else {
+        //             if (func.codigo == 4) {
+        //                 console.log(func.nome + " salario: " + func.salario + " código: " + func.codigo + " cargo: " + gerente.cargo + ". Aumento de: " + gerente.reajuste + "%. Salário reajustado: R$" + gerente.reajustado);
+        //             } else {
+        //                 if (func.codigo == 5) {
+        //                     console.log(func.nome + " salario: " + func.salario + " código: " + func.codigo + " cargo: " + diretor.cargo + ". Seu cargo não tem aumento");
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+        // exercicio 21
+            
+            // var somaNumeros = 0;
+            // var numeros = 1;
+            // while(numeros <= 15) {
+            //     var numerosRecebidos = parseInt(prompt("Digite um número inteiro: "));
+            //     somaNumeros = somaNumeros + numerosRecebidos;
+            //     numeros++;
+            // }
+            // document.write(somaNumeros);
+
+        // exercicio 22
+
+            // for(var num = 1; num <= 50; num = num + 2) {
+            //     document.write(num);
+            //     document.write("<br>");
+            // }
+
+        // exercicio 23 tabuada de um numero escolhido pelo usuario
+
+        // var numMultiplo = prompt("Digite um número para calcularmos a tabuada dele: ");
+
+        // for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+        //     var resultado = numMultiplo * multiplicador;
+        //     document.write(multiplicador + " x " + numMultiplo + " = " + resultado);
+        //     document.write("<br>");
+        // }
+
+        // exercicio 24 tabuada na tela de 1 a 10
+
+        // for(var multiplicador1 = 1; multiplicador1 <= 10; multiplicador1++) {
+        //     for(var multiplicador2 = 1; multiplicador2 <= 10; multiplicador2++){
+        //         var resultado = multiplicador1 * multiplicador2;
+        //         document.write(multiplicador1 + " x " + multiplicador2 + " = " + resultado);
+        //         document.write("<br>");
+        //     }
+        // }
+
+        
+        // exercicio 25 10 pessoas (sim ou nao) (fem ou masc)
+
+            // var pessoa1 = {sexo: "fem", gostou: "sim"};
+            // var pessoa2 = {sexo: "fem", gostou: "nao"};
+            // var pessoa3 = {sexo: "masc", gostou: "sim"};
+            // var pessoa4 = {sexo: "fem", gostou: "sim"};
+            // var pessoa5 = {sexo: "fem", gostou: "sim"};
+            // var pessoa6 = {sexo: "fem", gostou: "nao"};
+            // var pessoa7 = {sexo: "masc", gostou: "sim"};
+            // var pessoa8 = {sexo: "fem", gostou: "sim"};
+            // var pessoa9 = {sexo: "fem", gostou: "sim"};
+            // var pessoa10 = {sexo: "fem", gostou: "nao"};
+
+        //    var likes = ["sim", "sim", "sim", "sim", "nao", "nao", "nao", "sim", "sim", "sim"];
+        //    var gender = ["masc", "fem", "fem", "fem", "masc", "fem", "fem", "masc", "fem", "masc"]
+
+        // var pessoas = [{ sexo: "fem", likes: "sim"},
+        //                 { sexo: "fem", likes: "nao"},
+        //                 { sexo: "masc", likes: "nao"},
+        //                 { sexo: "fem", likes: "sim"},
+        //                 { sexo: "fem", likes: "sim"},
+        //                 { sexo: "fem", likes: "nao"},
+        //                 { sexo: "masc", likes: "sim" },
+        //                 { sexo: "fem", likes: "sim" },
+        //                 { sexo: "fem", likes: "sim" },
+        //                 { sexo: "fem", likes: "nao" }]
+
+        //     var somaFem = 0;
+        //     var somaMasc = 0;
+        //     var somaSim = 0;
+        //     var somaNao = 0;
+        //     var somaFemSim = 0;
+        //     var somaMascNao = 0;
+        // for(var multiplicador1 = 0; multiplicador1 < 10; multiplicador1++) {
+        //         var pessoasSexo = pessoas[multiplicador1];
+        //         var pessoasLikes = pessoas[multiplicador1];
+        //        // console.log(pessoasSexo.sexo)
+        //         if(pessoasSexo.sexo == "fem") {
+        //             console.log("fem");
+        //             somaFem = somaFem + 1;
+        //         }else{
+        //             somaMasc = somaMasc + 1;
+        //         }
+        //         if(pessoasLikes.likes == "sim") {
+        //             somaSim = somaSim + 1;
+        //         }else{
+        //             somaNao = somaNao + 1;
+        //         }
+        //         if(pessoasSexo.sexo == "fem" && pessoasLikes.likes == "sim") {
+        //             somaFemSim = somaFemSim + 1;
+        //         }
+        //         if(pessoasSexo.sexo == "masc" && pessoasLikes.likes == "nao") {
+        //             somaMascNao = somaMascNao + 1;
+        //         }
+        // }
+        // var porMascNao = (somaMascNao * 100)/10;
+        // document.write("Número de pessoas que responderam sim: " + somaSim + "<br>");
+        // document.write("Número de pessoas que responderam não: " + somaNao + "<br>");
+        // document.write("Número de mulheres que responderam sim: " + somaFemSim + "<br>");
+        // document.write("Porcentagem de homens que responderam não: " + porMascNao + "% <br>");
+
+        var pessoas2 = [
+            {idade: 35, peso: 70, sexo: "fem"},
+            {idade: 24, peso: 80, sexo: "mas"},
+            {idade: 29, peso: 60, sexo: "fem"},
+            {idade: 32, peso: 58, sexo: "fem"},
+            {idade: 27, peso: 76, sexo: "mas"},
+            {idade: 38, peso: 64, sexo: "fem"},
+            {idade: 49, peso: 69, sexo: "fem"},
+            {idade: 87, peso: 68, sexo: "fem"},
+            {idade: 23, peso: 70, sexo: "mas"},
+            {idade: 76, peso: 75, sexo: "mas"}
+        ]
+            var somaFem = 0;
+            var somaMasc = 0;
+            var somaIdadeMas = 0;
+            var somaIdadeFem = 0;
+        for (var multiplicador1 = 0; multiplicador1 < 10; multiplicador1++) {
+            var pessoas2Sexo = pessoas2[multiplicador1];
+            var pessoas2Idade = pessoas2[multiplicador1];
+
+            if (pessoas2Sexo.sexo == "fem") {
+                somaFem = somaFem + 1;
+            } else {
+                somaMasc = somaMasc + 1;
+            }
+            if (pessoas2Sexo.sexo == "mas") {
+                somaIdadeMas = somaIdadeMas + pessoas2Idade.idade;
+            } else {
+                somaIdadeFem = somaIdadeFem + pessoas2Idade.idade;
+            }
+        }
+        var mediaIdadeMas = somaIdadeMas / somaMasc;
+        var mediaIdadeFem = somaIdadeFem / somaFem;
+           document.write("Número total de homens: " + somaMasc + "<br>");
+           document.write("Número total de mulheres: " + somaFem + "<br>");
+           document.write("A média de idade dos homens é: " + mediaIdadeMas + "<br>");
+           document.write("A média de idade das mulheres é: " + mediaIdadeFem + "<br>");
+        
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

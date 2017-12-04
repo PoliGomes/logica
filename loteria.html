@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="numero"/>
+    <input type="submit" id="adivinhar" value="Compare meu segredo"/>
+</body>
+<script>
+
+    function sorteia() {
+        return Math.round(Math.random() * 10);
+    }
+    function sorteiaNumeros(quantidade) {
+        var segredos = [];
+        var numero = 1;
+        while(numero <= quantidade) {
+            segredos.push(sorteia());
+        }
+        return segredos;   
+    }
+var segredos = sorteiaNumeros(3);
+var input = document.querySelector("input");
+input.focus();
+function verifica() {
+    var achou = false;
+    for(var posicao = 0; posicao < segredos.length; posicao++) {
+        if(input.value ==  segredos[posicao]) {
+            alert("Você Acertou!!!");
+            achou = true;
+            break;
+        }
+    }
+}
+var botaoClicado = document.getElementById("adivinhar");
+botaoClicado.onclick = verifica;
+
+
+</script>
+</html>

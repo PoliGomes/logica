@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function pulaLinha() {
+			document.write("<br><hr><br>");
+		}
+		function mostra(frase) {
+			document.write(frase);
+			pulaLinha();
+		}
+		function calculaImc(altura, peso){
+			return Math.round(peso / (altura * altura));	
+		}
+		var alturaInf = prompt("Informe sua altura:");
+		var pesoInf = prompt("Informe seu peso:")
+		var meuImc = calculaImc(alturaInf, pesoInf);
+		if (meuImc > 18.5 && meuImc < 35) {
+			mostra("Estou dentro do limite ideal.");	
+		}else{
+			mostra("Estou fora dos limites.");
+		}
+
+		var vitorias = parseInt(prompt("Quantas vitorias?"));
+		var empates = parseInt(prompt("Quantos empates?"));
+		var pontos = (vitorias * 3) + empates;
+
+		mostra("Nosso time tem " + pontos + " pontos!");
+		
+	</script>
+</body>
+</html>
