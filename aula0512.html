@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 0512</title>
+</head>
+<body>
+    <script>
+    
+    // var mes = parseInt( prompt("digite um número entre 1 e 3") );
+        
+    //         switch (mes) {//1i
+    //             case 1:
+    //                 alert("Janeiro");
+    //                 break;
+    //             case 2:
+    //                 alert("Fevereiro");
+    //                 break;
+    //             case 3:
+    //                 alert("Março");
+    //                 break;
+    //             default:
+    //                 alert("digite apenas números de 1 a 3");
+    //                 break;
+    //         }
+    
+
+        // var somaNumeros = 0;
+        // var numInt = 1;
+
+        // while (numInt <= 15) {
+        //     var numerosDigitados = parseInt(prompt("Digite um número inteiro:" ));
+        //     somaNumeros = somaNumeros + numerosDigitados;
+        //     numInt++;
+        // }document.write(somaNumeros);
+
+        // var numImp = 1;
+    
+        // while(numImp <= 50) {
+        //     document.write(numImp + "<br>");
+        //     numImp = numImp + 2;
+        // }
+
+        // var multiplicador = 1;
+        //     numDig = prompt("Digite um numero:");
+        // while(multiplicador <= 10) {
+        //     document.write(numDig + " x " + multiplicador + " = " + multiplicador * numDig + "<br>");
+        //     multiplicador++;
+        // }
+
+        // var multiplicador = 1;
+        // while(multiplicador <= 10){
+        //     var multiplicador2 = 1;
+        //     while(multiplicador2 <= 10) {
+        //         document.write(multiplicador2 + " x " + multiplicador + " = " + multiplicador * multiplicador2 + "<br>");
+        //         multiplicador2++;
+        //     }
+        //     document.write("<br>");
+        //     multiplicador++;
+        // }
+    
+        var pessoas = [
+            {sexo: "fem", resposta: "nao"},
+            {sexo: "fem", resposta: "nao"},
+            {sexo: "mas", resposta: "nao"},
+            {sexo: "fem", resposta: "sim"},
+            {sexo: "fem", resposta: "nao"},
+            {sexo: "fem", resposta: "sim"},
+            {sexo: "mas", resposta: "nao"},
+            {sexo: "mas", resposta: "nao"},
+            {sexo: "mas", resposta: "sim"},
+            {sexo: "mas", resposta: "nao"}
+        ]
+
+        var contador = 0;
+        while(contador <= 10) {
+           var pessoasResposta = pessoas[contador];
+           console.log(pessoasResposta.resposta);
+           var somaSim = 0;
+           var somaNao = 0;
+            if(pessoasResposta.resposta == "sim") {
+                somaSim = somaSim + 1;
+            }else{
+                somaNao = somaNao + 1;
+            }
+        contador++;
+        }
+        document.write(somaSim);
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -361,16 +361,17 @@
 
         //     var somaFem = 0;
         //     var somaMasc = 0;
-        //     var somaSim = 0;
-        //     var somaNao = 0;
+
         //     var somaFemSim = 0;
         //     var somaMascNao = 0;
         // for(var multiplicador1 = 0; multiplicador1 < 10; multiplicador1++) {
         //         var pessoasSexo = pessoas[multiplicador1];
         //         var pessoasLikes = pessoas[multiplicador1];
-        //        // console.log(pessoasSexo.sexo)
+        //         var somaSim = 0;
+        //         var somaNao = 0;
+        //       // console.log(pessoasSexo.sexo)
         //         if(pessoasSexo.sexo == "fem") {
-        //             console.log("fem");
+        //         //    console.log("fem");
         //             somaFem = somaFem + 1;
         //         }else{
         //             somaMasc = somaMasc + 1;
@@ -393,48 +394,43 @@
         // document.write("Número de mulheres que responderam sim: " + somaFemSim + "<br>");
         // document.write("Porcentagem de homens que responderam não: " + porMascNao + "% <br>");
 
-        var pessoas2 = [
-            {idade: 35, peso: 70, sexo: "fem"},
-            {idade: 24, peso: 80, sexo: "mas"},
-            {idade: 29, peso: 60, sexo: "fem"},
-            {idade: 32, peso: 58, sexo: "fem"},
-            {idade: 27, peso: 76, sexo: "mas"},
-            {idade: 38, peso: 64, sexo: "fem"},
-            {idade: 49, peso: 69, sexo: "fem"},
-            {idade: 87, peso: 68, sexo: "fem"},
-            {idade: 23, peso: 70, sexo: "mas"},
-            {idade: 76, peso: 75, sexo: "mas"}
-        ]
-            var somaFem = 0;
-            var somaMasc = 0;
-            var somaIdadeMas = 0;
-            var somaIdadeFem = 0;
-        for (var multiplicador1 = 0; multiplicador1 < 10; multiplicador1++) {
-            var pessoas2Sexo = pessoas2[multiplicador1];
-            var pessoas2Idade = pessoas2[multiplicador1];
-
-            if (pessoas2Sexo.sexo == "fem") {
-                somaFem = somaFem + 1;
-            } else {
-                somaMasc = somaMasc + 1;
-            }
-            if (pessoas2Sexo.sexo == "mas") {
-                somaIdadeMas = somaIdadeMas + pessoas2Idade.idade;
-            } else {
-                somaIdadeFem = somaIdadeFem + pessoas2Idade.idade;
-            }
-        }
-        var mediaIdadeMas = somaIdadeMas / somaMasc;
-        var mediaIdadeFem = somaIdadeFem / somaFem;
-           document.write("Número total de homens: " + somaMasc + "<br>");
-           document.write("Número total de mulheres: " + somaFem + "<br>");
-           document.write("A média de idade dos homens é: " + mediaIdadeMas + "<br>");
-           document.write("A média de idade das mulheres é: " + mediaIdadeFem + "<br>");
+        // var pessoas2 = [
+        //     {idade: 35, peso: 70, sexo: "fem"},
+        //     {idade: 24, peso: 80, sexo: "mas"},
+        //     {idade: 29, peso: 60, sexo: "fem"},
+        //     {idade: 32, peso: 58, sexo: "fem"},
+        //     {idade: 27, peso: 76, sexo: "mas"},
+        //     {idade: 38, peso: 64, sexo: "fem"},
+        //     {idade: 49, peso: 69, sexo: "fem"},
+        //     {idade: 87, peso: 68, sexo: "fem"},
+        //     {idade: 23, peso: 70, sexo: "mas"},
+        //     {idade: 76, peso: 75, sexo: "mas"}
+        // ]
+        //     var somaFem = 0;
+        //     var somaMasc = 0;
+        //     var somaIdadeMas = 0;
+        //     var somaIdadeFem = 0;
+        // for (var multiplicador1 = 0; multiplicador1 < 10; multiplicador1++) {
+        //     var pessoas2Sexo = pessoas2[multiplicador1];
+        //     var pessoas2Idade = pessoas2[multiplicador1];
+        //     if (pessoas2Sexo.sexo == "fem") {
+        //         somaFem = somaFem + 1;
+        //     } else {
+        //         somaMasc = somaMasc + 1;
+        //     }
+        //     if (pessoas2Sexo.sexo == "mas") {
+        //         somaIdadeMas = somaIdadeMas + pessoas2Idade.idade;
+        //     } else {
+        //         somaIdadeFem = somaIdadeFem + pessoas2Idade.idade;
+        //     }
+        // }
+        // var mediaIdadeMas = somaIdadeMas / somaMasc;
+        // var mediaIdadeFem = somaIdadeFem / somaFem;
+        //    document.write("Número total de homens: " + somaMasc + "<br>");
+        //    document.write("Número total de mulheres: " + somaFem + "<br>");
+        //    document.write("A média de idade dos homens é: " + mediaIdadeMas + "<br>");
+        //    document.write("A média de idade das mulheres é: " + mediaIdadeFem + "<br>");
         
-
-
-
-
 
 
     </script>
